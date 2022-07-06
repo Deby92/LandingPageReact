@@ -1,20 +1,30 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-export  Navbar() => {
-    return(
-        <div className="container">
-            <Navbar bg="dark" variant="dark">
-            <Container>
-            <Navbar.Brand href="#home">Start Boostrap</Navbar.Brand>
-            <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">About</Nav.Link>
-                <Nav.Link href="#pricing">Services</Nav.Link>
-                <Nav.Link href="#pricing">Contact</Nav.Link>
-             </Nav>
-            </Container>
-            </Navbar>
-        </div>      
-    );
-}
+export const Navbar = () => {
+  return (
+    <div className="container-fluid navbar navbar lg bg-dark">
+      <a className="navbar-brand">Start React & Bootstrap</a>
+      <ul className="nav justify-content-end">
+        <li className="nav-item">
+          <a className="nav-link" aria-current="page" href="#">
+            Home
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            Services
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  );
+};
+export default Navbar;
